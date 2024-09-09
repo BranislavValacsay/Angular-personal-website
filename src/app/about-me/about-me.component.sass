@@ -1,0 +1,119 @@
+@import '../../styles'
+
+.about-me-wrapper
+  min-height: 100vh
+  padding: 20px
+  background-color: #eee7e1
+  font-family: "Montserrat", sans-serif
+  color: #333
+
+.back-button
+  display: inline-flex
+  align-items: center
+  cursor: pointer
+  font-size: 18px
+  margin-bottom: 20px
+  transition: transform 0.3s ease
+
+  &:hover
+    transform: translateX(-5px)
+
+  .arrow
+    margin-right: 10px
+
+.content
+  max-width: 800px
+  margin: 0 auto
+
+h1, h2, h3, h4
+  font-family: "Cormorant", serif
+  font-variant: small-caps
+  margin-bottom: 20px
+
+h1
+  font-size: 3em
+  margin-bottom: 10px
+
+h2
+  font-size: 2em
+  margin-bottom: 30px
+  color: #666
+
+h3
+  font-size: 1.8em
+  border-bottom: 2px solid #666
+  padding-bottom: 10px
+  margin-top: 40px
+
+h4
+  font-size: 1.4em
+  margin-bottom: 10px
+
+p
+  font-size: 16px
+  line-height: 1.6
+  margin-bottom: 20px
+
+section
+  margin-bottom: 40px
+
+ul
+  padding-left: 20px
+  margin-bottom: 20px
+
+  li
+    margin-bottom: 10px
+
+.skills-list, .contact-list
+  list-style-type: none
+  padding-left: 0
+
+.job, .education
+  margin-bottom: 30px
+
+.company
+  font-style: italic
+  margin-bottom: 10px
+
+a
+  color: #0077b5
+  text-decoration: none
+  transition: color 0.3s ease
+
+  &:hover
+    color: #00557f
+
+@media (max-width: 767px)
+  .back-button
+    font-size: 16px
+
+  h1
+    font-size: 2.5em
+
+  h2
+    font-size: 1.8em
+
+  h3
+    font-size: 1.6em
+
+  h4
+    font-size: 1.3em
+
+  p, li
+    font-size: 14px
+
+@media (max-width: 480px)
+  h1
+    font-size: 2em
+
+  h2
+    font-size: 1.5em
+
+  h3
+    font-size: 1.4em
+
+  h4
+    font-size: 1.2em
+
+  p, li
+    font-size: 13px

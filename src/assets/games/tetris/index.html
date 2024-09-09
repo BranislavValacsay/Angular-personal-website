@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #tetris {
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <div id="score" style="margin-bottom: 20px; font-size: 20px;">Score: 0</div>
+        <button id="resetButton" style="margin: 0 auto 20px; font-size: 16px; display: block;">Reset Game</button>
+        <canvas id="tetris" width="240" height="400"></canvas>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.social-icons
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 15px
+  writing-mode: vertical-rl
+  transform: rotate(180deg)
+  position: absolute
+  left: 10px
+  top: 50%
+  transform: translateY(-50%) rotate(180deg)
+
+.icon-text
+  font-size: 12px
+  font-family: "Montserrat", sans-serif
+
+.icon-link
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 24px
+  height: 24px
+  transition: transform 0.3s ease
+
+  &:hover
+    transform: scale(1.2)
+
+  svg
+    fill: #333
+    transition: fill 0.3s ease
+
+  &:hover svg
+    fill: #0077b5
+
+@media (max-width: 767px)
+  .social-icons
+    writing-mode: horizontal-tb
+    transform: none
+    position: static
+    margin-bottom: 20px
