@@ -19,14 +19,20 @@ export class GamesComponent implements OnInit {
 
   openTetris(event: Event) {
     event.preventDefault();
-    const tetrisUrl = `${window.location.origin}/assets/games/tetris/index.html`;
-    window.open(tetrisUrl, '_blank', 'width=600,height=700');
+    const gameUrl = `${window.location.origin}/assets/games/tetris/index.html`;
+    window.open(gameUrl, '_blank', 'width=600,height=700');
   }
 
   openMinesweeper(event: Event) {
     event.preventDefault();
-    const tetrisUrl = `${window.location.origin}/assets/games/minesweeper/index.html`;
-    window.open(tetrisUrl, '_blank', 'width=600,height=700');
+    const gameUrl = `${window.location.origin}/assets/games/minesweeper/index.html`;
+    window.open(gameUrl, '_blank', 'width=600,height=700');
+  }
+
+  openSnake(event: Event) {
+    event.preventDefault();
+    const gameUrl = `${window.location.origin}/assets/games/minesweeper/index.html`;
+    window.open(gameUrl, '_blank', 'width=600,height=700');
   }
 
 }
