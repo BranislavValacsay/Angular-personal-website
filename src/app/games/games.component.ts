@@ -31,7 +31,7 @@ export class GamesComponent implements OnInit {
 
   openSnake(event: Event) {
     event.preventDefault();
-    const gameUrl = `${window.location.origin}/assets/games/minesweeper/index.html`;
+    const gameUrl = `${window.location.origin}/assets/games/snake/index.html`;
     window.open(gameUrl, '_blank', 'width=600,height=700');
   }
 
