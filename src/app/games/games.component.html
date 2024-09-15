@@ -11,18 +11,48 @@
       <ul class="games-list">
         <li>
           <h4>Tetris</h4>
-          <p>A JavaScript implementation of the classic block-stacking puzzle game, showcasing DOM manipulation and game logic.</p>
-          <a href="#" class="play-button" (click)="openTetris($event)">Play Now</a>
+          <div class="game-content">
+            <div class="game-info">
+              <p>A JavaScript implementation of the classic block-stacking puzzle game, showcasing DOM manipulation and game logic.</p>
+              <div class="game-links">
+                <a href="#" class="play-button" (click)="openTetris($event)">Play Now</a>
+                <a href="https://github.com/BranislavValacsay/Javascript-Tetris" class="github-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+            </div>
+            <div class="game-screenshot">
+              <img src="/assets/images/tetris.png" alt="Tetris Screenshot" class="game-image">
+            </div>
+          </div>
         </li>
         <li>
           <h4>Minesweeper</h4>
-          <p>A JavaScript recreation of the iconic puzzle game, demonstrating advanced event handling, recursive algorithms, and dynamic UI updates.</p>
-          <a href="#" class="play-button" (click)="openMinesweeper($event)">Play Now</a>
+          <div class="game-content">
+            <div class="game-info">
+              <p>A JavaScript recreation of the iconic puzzle game, demonstrating advanced event handling, recursive algorithms, and dynamic UI updates.</p>
+              <div class="game-links">
+                <a href="#" class="play-button" (click)="openMinesweeper($event)">Play Now</a>
+                <a href="https://github.com/BranislavValacsay/Javascript-Minesweeper" class="github-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+            </div>
+            <div class="game-screenshot">
+              <img src="/assets/images/minesweeper.png" alt="Minesweeper Screenshot" class="game-image">
+            </div>
+          </div>
         </li>
         <li>
           <h4>Snake</h4>
-          <p>All time classic Snake game algorithm implementation. Simple graphics, but fun as ever. Use 'w,a,s,d' to control the snake and get highest score.</p>
-          <a href="#" class="play-button" (click)="openSnake($event)">Play Now</a>
+          <div class="game-content">
+            <div class="game-info">
+              <p>All time classic Snake game algorithm implementation. Simple graphics, but fun as ever. Use 'w,a,s,d' to control the snake and get highest score.</p>
+              <div class="game-links">
+                <a href="#" class="play-button" (click)="openSnake($event)">Play Now</a>
+                <a href="https://github.com/BranislavValacsay/JavaScritpt_Snake_Game" class="github-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+            </div>
+            <div class="game-screenshot">
+              <img src="/assets/images/snake.png" alt="Snake Screenshot" class="game-image">
+            </div>
+          </div>
         </li>
       </ul>
     </section>
@@ -40,3 +70,67 @@
     </section>
   </div>
 </div>
+
+<style>
+  .games-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .game-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .game-info {
+    flex: 1;
+  }
+
+  .game-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .game-screenshot {
+    flex: 1;
+    max-width: 508px;
+    max-height: 614px;
+    overflow: hidden;
+  }
+
+  .game-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .github-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .github-link:hover {
+    background-color: #1b1f23;
+  }
+
+  @media (min-width: 768px) {
+    .game-content {
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .game-screenshot {
+      max-width: 100%;
+      max-height: 400px;
+    }
+  }
+</style>
