@@ -35,4 +35,10 @@ export class GamesComponent implements OnInit {
     window.open(gameUrl, '_blank', 'width=600,height=700');
   }
 
+  openArkanoid(event: Event) {
+    event.preventDefault();
+    const gameUrl = `${window.location.origin}/assets/games/arkanoid/index.html`;
+    window.open(gameUrl, '_blank');
+  }
+
 }
