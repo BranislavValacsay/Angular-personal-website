@@ -20,7 +20,7 @@ This repository contains the source code for my personal portfolio website. It s
 ## Contact
 
 - LinkedIn: [https://www.linkedin.com/in/branislav-valacsay/](https://www.linkedin.com/in/branislav-valacsay/)
-- Email: branislav.valacsay@outlook.com
+- Email: branislav.valacsay@archdev.tech
 - Website: http://archdev.tech
 
 ---
